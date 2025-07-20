@@ -1,0 +1,43 @@
+ERROR:  54001: stack depth limit exceeded
+HINT:  Increase the configuration parameter "max_stack_depth" (currently 2048kB), after ensuring the platform's stack depth limit is adequate.
+CONTEXT:  SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"
+PL/pgSQL function auto_cleanup_expired_announcements() line 4 at SQL statement
+SQL statement "DELETE FROM upcoming_content 
+    WHERE release_date <= CURRENT_DATE"

@@ -1,0 +1,27 @@
+6:21:19 AM [vite] hmr update /src/index.css?v=SmzpjrBf_uj9MIIF8Pt0G, /src/components/Footer.tsx, /src/components/admin/AdvertisementTab.tsx
+6:21:19 AM [vite] hmr update /src/components/Footer.tsx, /src/index.css?v=SmzpjrBf_uj9MIIF8Pt0G
+6:21:19 AM [vite] hmr update /src/components/UpcomingMoreInfo.tsx, /src/index.css?v=SmzpjrBf_uj9MIIF8Pt0G
+6:21:20 AM [vite] hmr update /src/components/admin/AdvertisementTab.tsx, /src/index.css?v=SmzpjrBf_uj9MIIF8Pt0G
+6:21:21 AM [vite] Internal server error: Transform failed with 1 error:
+/home/runner/workspace/client/src/components/admin/AdvertisementTab.tsx:176:36: ERROR: The character ">" is not valid inside a JSX element
+  Plugin: vite:esbuild
+  File: /home/runner/workspace/client/src/components/admin/AdvertisementTab.tsx:176:33
+  
+  The character ">" is not valid inside a JSX element
+  174|  
+  175|                            See More
+  176|                          </Button>ton>
+     |                                      ^
+  177|                        </DialogTrigger>
+  178|                        <DialogContent data-replit-metadata="client/src/components/admin/AdvertisementTab.tsx:178:22" data-component-name="DialogContent" className="bg-card/95 backdrop-blur-sm border border-border/30">
+  
+      at failureErrorWithLog (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/runner/workspace/node_modules/vite/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:191:23)

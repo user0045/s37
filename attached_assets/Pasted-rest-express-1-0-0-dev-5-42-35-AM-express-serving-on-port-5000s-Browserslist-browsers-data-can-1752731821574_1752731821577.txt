@@ -1,0 +1,70 @@
+rest-express@1.0.0 dev
+5:42:35 AM [express] serving on port 5000s
+Browserslist: browsers data (caniuse-lite) is 9 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+5:44:34 AM [express] POST /api/check-recent-ad-request 200 in 2ms :: {"hasRecentRequest":false}
+5:44:35 AM [express] POST /api/advertisement-requests 201 in 1ms :: {"id":"1","email":"your@email.co…
+5:45:31 AM [express] GET /api/advertisement-requests 200 in 1ms :: []
+5:52:56 AM [express] GET /api/advertisement-requests 304 in 1ms :: []
+5:55:43 AM [vite] hmr update /src/components/Footer.tsx, /src/index.css?v=30Y7LKN1RerJpvq60aTsX
+5:55:44 AM [vite] hmr update /src/components/UpcomingMoreInfo.tsx, /src/index.css?v=30Y7LKN1RerJpvq60aTsX
+5:55:51 AM [vite] hmr update /src/components/AdminDashboard.tsx, /src/index.css?v=30Y7LKN1RerJpvq60aTsX
+5:55:51 AM [vite] Internal server error: /home/runner/workspace/client/src/components/AdminDashboard.tsx: Identifier 'AdminDashboard' has already been declared. (81:6)
+
+  79 | export default AdminDashboard;
+  80 |
+> 81 | const AdminDashboard = () => {
+     |       ^
+  82 |   return (
+  83 |     <div className="min-h-screen bg-background">
+  84 |       {/* Admin Header */}
+  Plugin: vite:react-babel
+  File: /home/runner/workspace/client/src/components/AdminDashboard.tsx:81:6
+  79 |  export default AdminDashboard;
+  80 |  
+  81 |  const AdminDashboard = () => {
+     |        ^
+  82 |    return (
+  83 |      <div className="min-h-screen bg-background">
+      at toParseError (/home/runner/workspace/node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at raise (/home/runner/workspace/node_modules/@babel/parser/src/tokenizer/index.ts:1497:19)
+      at checkRedeclarationInScope (/home/runner/workspace/node_modules/@babel/parser/src/util/scope.ts:155:19)
+      at declareName (/home/runner/workspace/node_modules/@babel/parser/src/util/scope.ts:109:12)
+      at declareName (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/scope.ts:89:11)
+      at declareNameFromIdentifier (/home/runner/workspace/node_modules/@babel/parser/src/parser/lval.ts:739:16)
+      at checkIdentifier (/home/runner/workspace/node_modules/@babel/parser/src/parser/lval.ts:734:12)
+      at checkLVal (/home/runner/workspace/node_modules/@babel/parser/src/parser/lval.ts:636:12)
+      at parseVarId (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1605:10)
+      at parseVarId (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:3543:13)
+      at parseVar (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1558:12)
+      at parseVarStatement (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1227:10)
+      at parseVarStatement (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:3007:33)
+      at parseStatementContent (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:566:21)
+      at parseStatementContent (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:3056:20)
+      at parseStatementLike (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:437:17)
+      at parseModuleItem (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:374:17)
+      at parseBlockOrModuleBlockBody (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1419:16)
+      at parseBlockBody (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:1393:10)
+      at parseProgram (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:225:10)
+      at parseTopLevel (/home/runner/workspace/node_modules/@babel/parser/src/parser/statement.ts:203:25)
+      at parse (/home/runner/workspace/node_modules/@babel/parser/src/parser/index.ts:90:10)
+      at parse (/home/runner/workspace/node_modules/@babel/parser/src/plugins/typescript/index.ts:4192:20)
+      at parse (/home/runner/workspace/node_modules/@babel/parser/src/index.ts:92:38)
+      at parser (/home/runner/workspace/node_modules/@babel/core/src/parser/index.ts:28:19)
+      at parser.next (<anonymous>)
+      at normalizeFile (/home/runner/workspace/node_modules/@babel/core/src/transformation/normalize-file.ts:50:24)
+      at normalizeFile.next (<anonymous>)
+      at run (/home/runner/workspace/node_modules/@babel/core/src/transformation/index.ts:40:36)
+      at run.next (<anonymous>)
+      at transform (/home/runner/workspace/node_modules/@babel/core/src/transform.ts:29:20)
+      at transform.next (<anonymous>)
+      at step (/home/runner/workspace/node_modules/gensync/index.js:261:32)
+      at /home/runner/workspace/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
+      at /home/runner/workspace/node_modules/gensync/index.js:189:28
+      at <anonymous> (/home/runner/workspace/node_modules/@babel/core/src/gensync-utils/async.ts:90:7)
+      at /home/runner/workspace/node_modules/gensync/index.js:113:33
+      at step (/home/runner/workspace/node_modules/gensync/index.js:287:14)
+      at /home/runner/workspace/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/home/runner/workspace/node_modules/gensync/index.js:223:11)
