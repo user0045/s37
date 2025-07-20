@@ -1,0 +1,330 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(17, 25, 40, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(21, 138, 93, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(21, 138, 93, 0.8);
+}
+
+/* Wave animation styles for upcoming content */
+.upcoming-wave-bg-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(21, 138, 93, 0.05), transparent);
+  animation: wave-float-1 8s ease-in-out infinite;
+  transform: rotate(-15deg);
+}
+
+.upcoming-wave-bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(-45deg, transparent, rgba(53, 181, 132, 0.03), transparent);
+  animation: wave-float-2 12s ease-in-out infinite;
+  transform: rotate(25deg);
+}
+
+.upcoming-wave-bg-3 {
+  background: linear-gradient(135deg, rgba(0, 156, 91, 0.3) 0%, rgba(0, 156, 91, 0.1) 50%, transparent 100%);
+  animation: wave3 20s ease-in-out infinite;
+}
+
+.highlight-glow {
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.6), 0 0 12px rgba(139, 92, 246, 0.4);
+  animation: gentle-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes gentle-glow {
+  from {
+    text-shadow: 0 0 8px rgba(139, 92, 246, 0.6), 0 0 12px rgba(139, 92, 246, 0.4);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(139, 92, 246, 0.8), 0 0 16px rgba(139, 92, 246, 0.6);
+  }
+}
+
+.wave-transition {
+  transition: all 0.3s ease;
+}
+
+@keyframes wave-float-1 {
+  0%, 100% {
+    transform: translateX(-30%) translateY(-20%) rotate(-15deg);
+  }
+  50% {
+    transform: translateX(-20%) translateY(-30%) rotate(-10deg);
+  }
+}
+
+@keyframes wave-float-2 {
+  0%, 100% {
+    transform: translateX(-25%) translateY(-25%) rotate(25deg);
+  }
+  50% {
+    transform: translateX(-35%) translateY(-15%) rotate(20deg);
+  }
+}
+
+@keyframes wave-float-3 {
+  0%, 100% {
+    transform: translateX(-40%) translateY(-30%) rotate(-35deg);
+  }
+  50% {
+    transform: translateX(-30%) translateY(-40%) rotate(-30deg);
+  }
+}
+
+/* Player Page Waves */
+.player-wave-bg-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(10, 125, 75, 0.1) 0%, transparent 50%);
+  animation: playerWave1 8s ease-in-out infinite;
+}
+
+.player-wave-bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, rgba(10, 125, 75, 0.05) 0%, transparent 50%);
+  animation: playerWave2 6s ease-in-out infinite reverse;
+}
+
+.player-wave-bg-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, transparent 50%);
+  animation: playerWave3 10s ease-in-out infinite;
+}
+
+/* Enhanced Custom Video Player Styling */
+.custom-video-player::-webkit-media-controls-panel {
+  background: linear-gradient(to right, rgba(10, 125, 75, 0.9), rgba(0, 0, 0, 0.9));
+  border-radius: 0 0 12px 12px;
+}
+
+.custom-video-player::-webkit-media-controls-play-button,
+.custom-video-player::-webkit-media-controls-pause-button {
+  background-color: rgba(10, 125, 75, 0.9);
+  border-radius: 50%;
+  filter: brightness(1.2);
+}
+
+.custom-video-player::-webkit-media-controls-timeline {
+  background: rgba(10, 125, 75, 0.4);
+  border-radius: 4px;
+}
+
+.custom-video-player::-webkit-media-controls-timeline::-webkit-slider-thumb {
+  background: #0A7D4B;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(10, 125, 75, 0.8);
+}
+
+.custom-video-player::-webkit-media-controls-current-time-display,
+.custom-video-player::-webkit-media-controls-time-remaining-display {
+  color: #0A7D4B;
+  font-weight: 500;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+
+.custom-video-player::-webkit-media-controls-volume-slider {
+  background: rgba(10, 125, 75, 0.4);
+}
+
+.custom-video-player::-webkit-media-controls-mute-button,
+.custom-video-player::-webkit-media-controls-fullscreen-button {
+  filter: brightness(1.2) contrast(1.2);
+}
+
+/* Custom Video Container */
+.custom-video-container {
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background: linear-gradient(135deg, 
+    rgba(10, 125, 75, 0.1) 0%, 
+    rgba(0, 0, 0, 0.9) 50%, 
+    rgba(10, 125, 75, 0.1) 100%
+  );
+}
+
+.custom-video-container:hover {
+  transform: scale(1.002);
+  box-shadow: 0 20px 40px rgba(10, 125, 75, 0.25);
+}
+
+.custom-video-container iframe,
+.custom-video-container video {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.custom-video-container:hover iframe,
+.custom-video-container:hover video {
+  filter: contrast(1.08) brightness(1.05) saturate(1.05);
+}
+
+/* Enhanced embed iframe styling */
+.custom-video-container iframe {
+  background: transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-video-container iframe::-webkit-scrollbar {
+  display: none;
+}
+
+/* Remove platform branding and details */
+.custom-video-container iframe[src*="youtube"] {
+  pointer-events: auto;
+}
+
+.custom-video-container iframe[src*="vimeo"] {
+  pointer-events: auto;
+}
+
+/* Hide iframe scrollbars and borders */
+.custom-video-container iframe {
+  border: none !important;
+  outline: none !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-video-container iframe::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide download and share buttons in embedded videos */
+.custom-video-container iframe[src*="bitchute"] {
+  pointer-events: auto;
+}
+
+/* Additional CSS to hide download elements if they still appear */
+.custom-video-container iframe::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Custom loading animation for embedded videos */
+.custom-video-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(10, 125, 75, 0.3);
+  border-top: 3px solid #0A7D4B;
+  border-radius: 50%;
+  animation: videoLoading 1s linear infinite;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-video-container.loading::before {
+  opacity: 1;
+}
+
+@keyframes videoLoading {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Enhanced theme integration */
+.custom-video-container {
+  background: linear-gradient(135deg, 
+    rgba(10, 125, 75, 0.1) 0%, 
+    rgba(0, 0, 0, 0.9) 50%, 
+    rgba(10, 125, 75, 0.1) 100%
+  );
+}
+
+/* Responsive video player */
+@media (max-width: 768px) {
+  .custom-video-container {
+    border-radius: 8px;
+  }
+  
+  .custom-video-player::-webkit-media-controls-panel {
+    border-radius: 0 0 8px 8px;
+  }
+}
